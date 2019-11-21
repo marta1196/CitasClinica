@@ -1,10 +1,10 @@
 # Tarea Citas Clinica
 ## Profesor: José Ramón Jiménez Reyes
-## Alumno:
+## Alumno: Marta Yebra González
 
 Tu tarea va a consistir en gestionar las citas de los pacientes de una clínica. La clínica quiere almacenar la fecha y el día de las citas de los diferentes pacientes. Para los pacientes almacenará su nombre bien formateado, su DNI comprobando que es válido y su teléfono comprobando también que es válido. El programa permitirá insertar nuevas citas, buscar citas por el día, borrar una cita, mostrar todas las citas y mostrar las citas para un día dado.
 
-He subido a este repositorio de GitHub un esqueleto de proyecto gradle que ya lleva incluidos todos los test necesarios que el programa debe pasar. 
+He subido a este repositorio de GitHub un esqueleto de proyecto gradle que ya lleva incluidos todos los test necesarios que el programa debe pasar.
 
 Para ello te muestro un diagrama de clases para el mismo y poco a poco te iré explicando los diferentes pasos a realizar:
 
