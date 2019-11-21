@@ -5,10 +5,11 @@ import static org.hamcrest.CoreMatchers.nullValue;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.fail;
 
+import org.iesalandalus.programacion.citasclinica.Paciente;
 import org.junit.Test;
 
 public class PacienteTest {
-	
+
 	private static final String ERROR_NOMBRE_NULO = "ERROR: El nombre de un paciente no puede ser nulo o vacío.";
 	private static final String ERROR_DNI_NULO = "ERROR: El DNI de un paciente no puede ser nulo o vacío.";
 	private static final String ERROR_DNI_NO_VALIDO = "ERROR: El DNI no tiene un formato válido.";
@@ -79,7 +80,7 @@ public class PacienteTest {
 			fail(TIPO_NO_CORRECTO);
 		}
 	}
-	
+
 	@Test
 	public void constructorNombreValidoDniNoValidoTelefonoValidoLanzaExcepcion() {
 		Paciente paciente = null;
@@ -147,7 +148,7 @@ public class PacienteTest {
 			fail(TIPO_NO_CORRECTO);
 		}
 	}
-	
+
 	@Test
 	public void constructorNombreValidoDniValidoTelefonoNoValidoLanzaExcepcion() {
 		Paciente paciente = null;
@@ -206,7 +207,7 @@ public class PacienteTest {
 			fail(TIPO_NO_CORRECTO);
 		}
 	}
-	
+
 	@Test
 	public void constructorPacienteValidoCopiaPacienteCorrectamente() {
 		Paciente paciente1 = new Paciente(NOMBRE_JRJR, DNI_JRJR, TELEFONO_JRJR);
@@ -216,7 +217,7 @@ public class PacienteTest {
 		assertThat(DNI_NO_ESPERADO, paciente2.getDni(), is(DNI_JRJR));
 		assertThat(TELEFONO_NO_ESPERADO, paciente2.getTelefono(), is(TELEFONO_JRJR));
 	}
-	
+
 	@Test
 	public void constructorPacienteNuloLanzaExcepcion() {
 		Paciente paciente = null;
@@ -230,7 +231,7 @@ public class PacienteTest {
 			fail(TIPO_NO_CORRECTO);
 		}
 	}
-	
+
 	@Test
 	public void toStringDevuelveLaCadenaEsperada() {
 		Paciente paciente = new Paciente(NOMBRE_JRJR, DNI_JRJR, TELEFONO_JRJR);
