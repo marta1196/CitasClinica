@@ -1,4 +1,4 @@
-package org.iesalandalus.programacion.citasclinica;
+package org.iesalandalus.programacion.citasclinica.modelo;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

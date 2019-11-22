@@ -34,7 +34,7 @@ Para ello te muestro un diagrama de clases para el mismo y poco a poco te iré e
     2. Crea los métodos `get` (sin parámetros) que se indican en el diagrama de clases.
     3. Crea los métodos `capacidadSuperada` y `tamanoSuperado`.
     4. Crea el método `buscarIndice` que buscará la cita pasada dentro de la colección de citas y devolverá su índice en el caso que la encuentre o el tamaño más uno en caso de que no la encuentre.
-    5. Crea el método `insertar` que insertará una copia de la cita pasada detrás de la última cita y deberá lanzar las excepciones pertinentes ante cualquier situación anómala.
+       5. Crea el método `insertar` que insertará una copia de la cita pasada detrás de la última cita y deberá lanzar las excepciones pertinentes ante cualquier situación anómala.
     6. Crea el método `buscar` que devolverá la copia de la cita que estamos buscando (ten en cuenta que como dos citas se consideran iguales si su fecha y hora son iguales, el paciente de la cita a buscar podría ser cualquiera) o `null` en caso de que no la encuentre.
     7. Crea el método `desplazarUnaPosicionHaciaIzquierda` al que le pasamos un índice y desplazará una posición a la izquierda todas las citas que estén a su derecha.
     8. Crea el método `borrar` que borrará la cita pasada, desplazando hacia la izquierda todas las citas que estén a su derecha, en caso de encontrarla o lanzará una excepción en caso contrario.
